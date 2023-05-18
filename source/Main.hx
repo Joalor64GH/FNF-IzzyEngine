@@ -39,7 +39,7 @@ class Main extends Sprite
 
 		RichPresence.startRichPresence();
 
-		game = new FlxGame(1280, 720, InitState, 1, normalFps, normalFps, true);
+		game = new FlxGame(1280, 720, InitState, #if (flixel < "5.0.0") 1, #end normalFps, normalFps, true);
 		addChild(game);
 
 		overlay = new Overlay(0, 0);
